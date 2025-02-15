@@ -1,0 +1,127 @@
+header{
+    padding: 50px 0 0 0;
+    border:10px;
+    text-align:center;
+    background-color: #1279f1/*#2b8af0*/;
+    font-family:SegeoUI, Tahoma, sans-serif;
+    margin:auto;
+    border-style:solid;;
+    border-color:#61a5ed;
+    border-radiud:8px;
+  }
+  
+  body{
+    font-family:SegeoUI, Tahoma, sans-serif;
+    line-hieght:2.0;
+    background-color:#6ba7fa;
+    color: #152236;
+    
+  }
+  nav{
+    background-color:#2c3e50;
+    padding:1 rem 0;
+  }
+  
+  nav ul{
+    list-style-type:none;
+    display:flex;
+    justify-content:center;
+    
+  }
+  nav ul li a{
+  
+    color: #fff;
+  
+    text-decoration: none;
+  
+    font-weight: bold;
+  
+    margin: 0 15px;
+  
+  }
+  nav ul li a:hover{
+    color:#28d1f7;
+      border: 10px;
+    border-color:#fff;
+    border-style:solid;
+    border-radius:8px;
+    padding:2px;
+  }
+  .section{
+    background-color:#fff;
+    padding:3rem 2rem;
+    box-shadow:0 0 30px rgba(0,0,0,0.1);
+    border-radius:8px;
+  }
+  .section h2{
+    color: #18a0f5;
+    border-bottom: 2px solid #18a0f5;
+    padding-bottom:0.5rem;
+    margin-bottom:1.5rem;
+  }
+  #admin-login{
+    display:none;
+  }
+  #admin-section{
+    display:none;
+  }
+  #contact-form input,#contact-form textarea{
+   
+    border-radius:4px;
+    border:1px solid #ddd;
+    padding:0.5rem;
+    margin-bottom:1rem;
+    width:400px;
+  }
+  #contact-form button{
+    background-color:#18a0f5;
+    color:#333;
+    border-radius:8px;
+    width:200px;
+    
+   
+    text-align:center;
+     cursor:pointer;
+   
+    
+  }
+  .contactbtn{
+  display:flex; 
+     justify-content:center;
+    cursor:pointer;
+  }
+
+#contact-btn:hover{
+    background-color: #2c3e50;
+    color:#fff;
+    border: 2px solid #18a0f5;
+}
+
+  #toggle-thm{
+    position:fixed;
+    border-radius:8px;
+    background-color:#2c3e50;
+    color:#fff;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+    transition: background-color 0.5sec ease;
+  }
+  #toggle-thm:hover{
+    background-color:#18a0f5;
+    
+  }
+  .dark-mode {
+    background-color:#3e76a8;
+      color:#2e4559;
+  }
+  .dark-mode header{
+    background-color:#1d64a3;
+  }
+  .dark-mode nav {
+    background-color:#718291;
+  }
+  .dark-mode body{
+    background-color:#4682b0;
+  }
+  
