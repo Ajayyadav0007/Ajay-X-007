@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding:100px;
+    background-color: #fff;
+    transition: 0.5s;
+
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 100px;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.banner .logo{
+    color:#333;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    
+}
+.banner .logo span{
+    color:orange;
+    font-size: 2em;
+}
+
+header ul{
+    display: flex;
+    gap:40px;
+    
+}
+header ul li{
+    list-style: none;
+  
+}
+
+header ul li a{
+    text-decoration: none;
+    color:#333;
+    font-size:1.2em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.content{
+    position: relative;
+    max-width: 700px;
+    transition: 0.5s;
+}
+
+.content h2{
+    font-size: 5.5em;
+    font-weight: 700px;
+    transition: 0.5s;
+}
+
+.content span{
+    font-size: 1.2em;
+    color:orange;
+    transition: 0.5s;
+}
+
+.content p{
+    font-size: 2em;
+    font-weight: 600px;
+    transition: 0.5s;
+}
+
+.content button{
+    padding: 10px 5px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: none;
+    background-color: orange;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    outline: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.content .btn{
+    background-color: transparent;
+}
+
+.daynight{
+    position: absolute;
+    bottom: 25px;
+    left:50%;
+    width:60px;
+    height:60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2em;
+    transition: 0.5s;
+
+}
+
+.daynight ion-icon:nth-child(2),
+.banner.night .daynight ion-icon:nth-child(1){
+    display: none;
+}
+.banner.night .daynight ion-icon:nth-child(2){
+    display: block;
+}
+
+.banner.night{
+    background: #333;
+}
+
+.banner.night .daynight{
+    color:#fff;
+    background: #444;
+}
+
+.banner.night header .logo,
+.banner.night .content h2,
+.banner.night .content p,
+.banner.night .content button.btn,
+.banner.night header ul li a{
+    color:#fff;
+}
